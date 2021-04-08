@@ -1,0 +1,44 @@
+@mixin tabletStyle {
+  #about-section {
+    .body-copy {
+      font-size: 20px;
+    }
+
+    & div.wrapper {
+      & .twoCol {
+        & h3 {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+
+  #featured-products-section {
+    min-height: 50vh;
+
+    & #featured-products-div {
+      & .product-thumb {
+        min-width: 350px;
+        min-height: 250px;
+        flex: 1;
+      }
+    }
+  }
+
+  #capabilities-section {
+    padding-bottom: 0px;
+
+    & .capability-heading {
+      font-size: 12px;
+    }
+  }
+
+  #contact-section {
+    min-height: 30vh;
+    & #form-div {
+      & #contact-form {
+        width: 80%;
+      }
+    }
+  }
+}

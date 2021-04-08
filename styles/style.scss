@@ -1,0 +1,540 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import "./variables";
+@import "./mixins";
+@import "./mobile";
+@import "./tablet";
+@import "./desktop";
+
+body {
+  margin: 0px;
+  @include poppins;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1400px;
+}
+
+.heading-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#mobile-menu-bttn-div {
+  display: none;
+}
+
+nav {
+  background-color: $mediumPrimary;
+  max-height: 100%;
+
+  div.wrapper {
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    & .logo {
+      display: inline;
+      margin-right: auto;
+      max-width: 100px;
+    }
+  }
+
+  & ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+    & li {
+      padding: 0px 20px;
+      & a {
+        text-decoration: none;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: $lightPrimary;
+        transition: 0.3s ease-in-out;
+      }
+
+      & a:hover {
+        color: $mediumSecondary;
+      }
+    }
+  }
+}
+
+.heading-medium {
+  @include heading();
+}
+
+.page-heading {
+  @include pageHeading();
+}
+
+.bold-weight {
+  font-weight: 800;
+}
+
+#intro-section {
+  height: 75vh;
+  background-color: $lightPrimary;
+  background-image: url(../images/shirt-model.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-x: right;
+  display: flex;
+  align-items: center;
+  justify-items: flex-end;
+
+  & #intro-text {
+    font-size: 125px;
+    font-weight: 300;
+    margin: 0px;
+    text-overflow: ellipsis;
+    max-width: 700px;
+    padding-bottom: 50px;
+    color: $lightComplementary;
+  }
+
+  & img {
+    max-height: 100%;
+  }
+}
+
+#about-section {
+  min-height: 50vh;
+  padding: 30px 0px;
+  display: flex;
+  align-items: center;
+  background-color: $lightComplementary;
+
+  & button {
+    @include bttnStyle();
+    color: $darkSecondary;
+    margin-right: auto;
+  }
+
+  & button:hover {
+    color: $lightComplementary;
+    background-color: $lightPrimary;
+  }
+
+  .body-copy {
+    margin: 0;
+  }
+
+  & div.wrapper {
+    display: flex;
+
+    & .twoCol {
+      flex: 1;
+      padding-right: 2%;
+
+      & h3 {
+        @include heading();
+        margin: 0;
+        padding: 0;
+        color: $mediumPrimary;
+      }
+    }
+
+    & span.accent-text {
+      color: $lightSecondary;
+      font-style: italic;
+    }
+  }
+}
+
+#featured-products-section {
+  min-height: 50vh;
+  background-color: $mediumSecondary;
+  padding-bottom: 30px;
+
+  & .heading-medium {
+    color: $lightComplementary;
+  }
+
+  & button {
+    @include bttnStyle();
+  }
+
+  & button:hover {
+    color: $lightComplementary;
+    background-color: $lightPrimary;
+  }
+
+  & #featured-products-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    & .product-thumb {
+      flex-grow: 1;
+      background-color: $lightPrimary;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      transition: 0.5s;
+    }
+
+    .product-thumb:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+
+    & #product-thumb1 {
+      background-image: url("../images/products/featured/product1-CROP.png");
+    }
+
+    & #product-thumb2 {
+      background-image: url("../images/products/featured/product2-CROP.png");
+    }
+
+    & #product-thumb3 {
+      background-image: url("../images/products/featured/product3-CROP.png");
+    }
+
+    & #product-thumb4 {
+      background-image: url("../images/products/featured/product4-CROP.png");
+    }
+
+    & #product-thumb5 {
+      background-image: url("../images/products/featured/product5-CROP.png");
+    }
+
+    & #product-thumb6 {
+      background-image: url("../images/products/featured/product6-CROP.png");
+    }
+  }
+}
+
+#capabilities-section {
+  min-height: 25vh;
+  background-color: $lightPrimary;
+  padding-bottom: 50px;
+
+  & #capabilities-div {
+    display: flex;
+    flex-wrap: wrap;
+
+    & .capability-heading {
+      @include pageHeading();
+      padding: 0;
+      font-size: 20px;
+      color: $mediumPrimary;
+    }
+
+    & .capability-item {
+      flex: 1;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
+    }
+
+    & .center-item {
+      border-left: 1.5px solid $mediumPrimary;
+      border-right: 1.5px solid $mediumPrimary;
+    }
+  }
+}
+
+#contact-section {
+  min-height: 50vh;
+  background-color: $mediumPrimary;
+  padding-bottom: 30px;
+
+  & .heading-medium {
+    color: $lightComplementary;
+  }
+
+  & .body-copy {
+    color: $lightComplementary;
+    font-weight: 100;
+    max-width: 700px;
+    // text-overflow: ellipsis;
+  }
+
+  & ::placeholder {
+    @include poppins;
+    color: $darkPrimary;
+  }
+
+  & #form-div {
+    display: flex;
+    justify-content: center;
+
+    & #contact-form {
+      width: 65%;
+      display: flex;
+      flex-wrap: wrap;
+
+      & input[type="text"] {
+        @include formInput();
+        min-width: 40%;
+        flex: 1;
+      }
+
+      & input[type="text"]:focus {
+        outline: none;
+      }
+
+      & textarea {
+        @include formInput();
+        width: 100%;
+      }
+
+      & textarea:focus {
+        outline: none;
+      }
+
+      & #submit-bttn-div {
+        margin: 0 auto;
+      }
+
+      & #submit {
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: white;
+        transition-duration: 0.5s;
+        padding: 10px 20px;
+        width: 100%;
+        border: 1px solid $lightPrimary;
+        background-color: transparent;
+      }
+
+      & #submit:hover {
+        background: $mediumSecondary;
+      }
+    }
+  }
+}
+
+#team-members-div {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+
+  & .team-member {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-right: 3%;
+
+    & .portrait {
+      width: 150px;
+      clip-path: circle(75px at center);
+      margin: 0 auto;
+    }
+
+    & .name {
+      padding-top: 10px;
+      margin: 0 auto;
+    }
+
+    & .bio {
+      margin-top: 10px;
+    }
+  }
+}
+
+select {
+  margin-bottom: 30px;
+}
+
+#projects-div {
+  display: flex;
+  flex-wrap: wrap;
+
+  & .project {
+    background-color: $lightSecondary;
+    flex: 1;
+    height: 400px;
+    min-width: 300px;
+    transition: 0.5s ease;
+    background-size: cover;
+
+    & img {
+      height: 100%;
+      width: 100%;
+    }
+
+    & .project-description {
+      font-size: 11px;
+    }
+  }
+
+  & .project:hover {
+    cursor: pointer;
+    transform: scale(1.025);
+    // background-image: unset;    // filter: blur(5px);
+  }
+
+  & #project1 {
+    background-image: url("../images/products/all/sample_1.jpg");
+  }
+
+  & #project2 {
+    background-image: url("../images/products/all/sample_2.jpg");
+  }
+
+  & #project3 {
+    background-image: url("../images/products/all/sample_3.jpg");
+  }
+
+  & #project4 {
+    background-image: url("../images/products/all/sample_4.jpg");
+  }
+
+  & #project5 {
+    background-image: url("../images/products/all/sample_5.jpg");
+  }
+
+  & #project6 {
+    background-image: url("../images/products/all/sample_6.jpg");
+  }
+
+  & #project7 {
+    background-image: url("../images/products/all/sample_7.jpg");
+  }
+
+  & #project8 {
+    background-image: url("../images/products/all/sample_8.jpg");
+  }
+
+  & #project9 {
+    background-image: url("../images/products/all/sample_9.jpg");
+  }
+
+  & #project10 {
+    background-image: url("../images/products/all/sample_10.jpg");
+  }
+
+  & #project11 {
+    background-image: url("../images/products/all/sample_11.jpg");
+  }
+
+  & #project12 {
+    background-image: url("../images/products/all/sample_12.jpg");
+  }
+
+  & #project13 {
+    background-image: url("../images/products/all/sample_13.jpg");
+  }
+
+  & #project14 {
+    background-image: url("../images/products/all/sample_14.jpg");
+  }
+
+  & #project15 {
+    background-image: url("../images/products/all/sample_15.jpg");
+  }
+
+  & #project16 {
+    background-image: url("../images/products/all/sample_16.jpg");
+  }
+
+  & #project17 {
+    background-image: url("../images/products/all/sample_17.jpg");
+  }
+
+  & #project18 {
+    background-image: url("../images/products/all/sample_18.jpg");
+  }
+}
+
+#about-us-hero {
+  // background: url(../images/);
+  background-size: cover;
+  height: 50vh;
+}
+
+#about-us-div {
+  padding-bottom: 30px;
+  display: flex;
+
+  & .twoCol {
+    flex: 1;
+    // padding-right: 2%;
+  }
+
+  & #headshot-div {
+    background-image: url(../images/shirley-headshot.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 2%;
+  }
+
+  & p.body-copy {
+    margin: 0px;
+    text-overflow: ellipsis;
+    max-width: 700px;
+    padding-bottom: 20px;
+  }
+}
+
+footer {
+  background-color: $mediumPrimary;
+  & div.wrapper {
+    display: flex;
+    padding-bottom: 50px;
+
+    & .footer-col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      & .footer-contact-info {
+        font-size: 16px;
+        color: $lightPrimary;
+      }
+    }
+
+    & #footer-menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      & li {
+        padding: 0px 20px;
+        & a {
+          text-decoration: none;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          font-size: 12px;
+          color: $lightPrimary;
+        }
+
+        & a:hover {
+          color: $lightComplementary;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  @include mobileStyle;
+}
+
+@media only screen and (min-width: 501px) {
+  @include tabletStyle;
+}
+
+@media only screen and (min-width: 1025px) {
+  @include desktopStyle;
+}

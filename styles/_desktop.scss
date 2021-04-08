@@ -1,0 +1,39 @@
+@mixin desktopStyle {
+  #about-section {
+    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    // clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    .body-copy {
+      font-size: 20px;
+      line-height: 1.4em;
+    }
+
+    & div.wrapper {
+      & .twoCol {
+        & h3 {
+          font-size: 50px;
+          letter-spacing: 0.1em;
+        }
+      }
+
+      & .accent-text {
+        color: $darkSecondary;
+        font-style: italic;
+      }
+    }
+  }
+
+  #featured-products-section {
+    & #featured-products-div {
+      & .product-thumb {
+        min-width: 400px;
+        height: 310px;
+        // margin: 10px;
+        // border-radius: 10px;
+      }
+    }
+  }
+
+  #capabilities-section {
+    padding-bottom: 30px;
+  }
+}

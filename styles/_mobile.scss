@@ -1,0 +1,164 @@
+@mixin mobileStyle {
+  .wrapper {
+    margin: 0 auto;
+    width: 85%;
+  }
+
+  #mobile-menu-bttn-div {
+    background-color: $mediumPrimary;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & .logo {
+      max-width: 90px;
+      margin-left: 30px;
+    }
+
+    & #mobile-menu-bttn {
+      margin: 30px;
+
+      & img {
+        max-width: 30px;
+      }
+
+      background: none;
+      border: none;
+    }
+  }
+
+  nav {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+
+    div.wrapper {
+      justify-content: center;
+      padding: 5px 0px;
+
+      & .logo {
+        display: none;
+      }
+    }
+
+    & ul {
+      flex-direction: column;
+
+      & li {
+        padding: 5px 20px;
+      }
+    }
+  }
+
+  .heading-medium {
+    @include heading();
+    padding: 30px 0px;
+    font-size: 20px;
+  }
+
+  #intro-section {
+    background-size: cover;
+    & #intro-text {
+      font-size: 70px;
+      max-width: 75%;
+    }
+  }
+
+  #about-section {
+    padding: 15px 0px;
+    .body-copy {
+      font-size: 16px;
+      line-height: 1.5em;
+    }
+
+    & div.wrapper {
+      flex-direction: column;
+
+      & .twoCol {
+        & h3 {
+          font-size: 28px;
+          padding-top: 20px;
+        }
+      }
+
+      & .accent-text {
+        font-size: 14px;
+      }
+    }
+  }
+
+  #featured-products-section {
+    button {
+      font-size: 0.5em;
+    }
+
+    & #featured-products-div {
+      & .product-thumb {
+        min-width: unset;
+        width: 50%;
+        height: 150px;
+      }
+    }
+  }
+
+  #capabilities-section {
+    padding-bottom: 15px;
+
+    & #capabilities-div {
+      flex-wrap: wrap;
+      & .capability-heading {
+        font-size: 12px;
+      }
+    }
+  }
+
+  #contact-section {
+    & #form-div {
+      & #contact-form {
+        width: 100%;
+      }
+    }
+  }
+
+  #team-members-div {
+    & .team-member {
+      padding-right: 0;
+      min-width: 300px;
+      border-bottom: 1.5px solid $mediumSecondary;
+
+      & .portrait {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  #projects-div {
+    & .project {
+      height: 200px;
+      min-width: 200px;
+    }
+  }
+
+  footer {
+    & div.wrapper {
+      padding-bottom: 30px;
+
+      & .footer-col {
+        & .footer-contact-info {
+          font-size: 12px;
+          color: $lightPrimary;
+        }
+      }
+
+      & #footer-menu {
+        & li {
+          padding: 0px 20px;
+          line-height: 0.7em;
+          & a {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
