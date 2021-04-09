@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
   margin: 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -99,20 +99,22 @@ nav ul li a:hover {
 
 .heading-medium {
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 300;
   letter-spacing: 0.2em;
   padding: 50px 0px;
   margin: 0;
+  font-family: "Bebas Neue", cursive;
 }
 
 .page-heading {
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 300;
   letter-spacing: 0.2em;
   padding: 50px 0px;
   margin: 0;
+  font-family: "Bebas Neue", cursive;
   font-weight: 800;
 }
 
@@ -123,7 +125,7 @@ nav ul li a:hover {
 #intro-section {
   height: 75vh;
   background-color: #9dc88d;
-  background-image: url(../images/shirt-model.png);
+  background-image: url(../images/shirt-model2.png);
   background-repeat: no-repeat;
   background-size: auto;
   background-position-x: right;
@@ -137,8 +139,8 @@ nav ul li a:hover {
 }
 
 #intro-section #intro-text {
-  font-size: 125px;
-  font-weight: 300;
+  font-size: 150px;
+  font-weight: 800;
   margin: 0px;
   text-overflow: ellipsis;
   max-width: 700px;
@@ -203,14 +205,15 @@ nav ul li a:hover {
 
 #about-section div.wrapper .twoCol h3 {
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 300;
   letter-spacing: 0.2em;
   padding: 50px 0px;
   margin: 0;
+  font-family: "Bebas Neue", cursive;
   margin: 0;
   padding: 0;
-  color: #4d774e;
+  color: #9dc88d;
 }
 
 #about-section div.wrapper span.accent-text {
@@ -316,11 +319,12 @@ nav ul li a:hover {
 
 #capabilities-section #capabilities-div .capability-heading {
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 300;
   letter-spacing: 0.2em;
   padding: 50px 0px;
   margin: 0;
+  font-family: "Bebas Neue", cursive;
   font-weight: 800;
   padding: 0;
   font-size: 20px;
@@ -366,22 +370,22 @@ nav ul li a:hover {
 }
 
 #contact-section ::-webkit-input-placeholder {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #164a41;
 }
 
 #contact-section :-ms-input-placeholder {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #164a41;
 }
 
 #contact-section ::-ms-input-placeholder {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #164a41;
 }
 
 #contact-section ::placeholder {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #164a41;
 }
 
@@ -451,47 +455,12 @@ nav ul li a:hover {
   background: #f1b24a;
 }
 
-#team-members-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-bottom: 30px;
-}
-
-#team-members-div .team-member {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-right: 3%;
-}
-
-#team-members-div .team-member .portrait {
-  width: 150px;
-  -webkit-clip-path: circle(75px at center);
-          clip-path: circle(75px at center);
-  margin: 0 auto;
-}
-
-#team-members-div .team-member .name {
-  padding-top: 10px;
-  margin: 0 auto;
-}
-
-#team-members-div .team-member .bio {
-  margin-top: 10px;
-}
-
 select {
   margin-bottom: 30px;
+}
+
+#products-page-body {
+  background-color: #f1b24a;
 }
 
 #projects-div {
@@ -500,6 +469,9 @@ select {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 1%;
+  border-radius: 15px;
+  background-color: #f1ce95;
 }
 
 #projects-div .project {
@@ -512,6 +484,10 @@ select {
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
   background-size: cover;
+  margin: 1%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 4px #164a41;
+          box-shadow: 0px 4px #164a41;
 }
 
 #projects-div .project img {
@@ -527,6 +503,8 @@ select {
   cursor: pointer;
   -webkit-transform: scale(1.025);
           transform: scale(1.025);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 #projects-div #project1 {
@@ -684,7 +662,7 @@ footer div.wrapper #footer-menu li a:hover {
   color: #ffffff;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .wrapper {
     margin: 0 auto;
     width: 85%;
@@ -739,11 +717,12 @@ footer div.wrapper #footer-menu li a:hover {
   }
   .heading-medium {
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 300;
     letter-spacing: 0.2em;
     padding: 50px 0px;
     margin: 0;
+    font-family: "Bebas Neue", cursive;
     padding: 30px 0px;
     font-size: 20px;
   }
@@ -768,7 +747,7 @@ footer div.wrapper #footer-menu li a:hover {
             flex-direction: column;
   }
   #about-section div.wrapper .twoCol h3 {
-    font-size: 28px;
+    font-size: 40px;
     padding-top: 20px;
   }
   #about-section div.wrapper .accent-text {
@@ -795,13 +774,23 @@ footer div.wrapper #footer-menu li a:hover {
   #contact-section #form-div #contact-form {
     width: 100%;
   }
-  #team-members-div .team-member {
-    padding-right: 0;
-    min-width: 300px;
-    border-bottom: 1.5px solid #f1b24a;
+  #about-us-div {
+    padding-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  #team-members-div .team-member .portrait {
-    margin-top: 30px;
+  #about-us-div .twoCol {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+  }
+  #about-us-div #headshot-div {
+    min-height: 200px;
   }
   #projects-div .project {
     height: 200px;
@@ -825,10 +814,10 @@ footer div.wrapper #footer-menu li a:hover {
 
 @media only screen and (min-width: 501px) {
   #about-section .body-copy {
-    font-size: 20px;
+    font-size: 18px;
   }
   #about-section div.wrapper .twoCol h3 {
-    font-size: 40px;
+    font-size: 70px;
   }
   #featured-products-section {
     min-height: 50vh;
@@ -860,7 +849,7 @@ footer div.wrapper #footer-menu li a:hover {
     line-height: 1.4em;
   }
   #about-section div.wrapper .twoCol h3 {
-    font-size: 50px;
+    font-size: 100px;
     letter-spacing: 0.1em;
   }
   #about-section div.wrapper .accent-text {

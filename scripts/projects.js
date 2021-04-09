@@ -5,6 +5,9 @@ const projects = [
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     image: "../images/products/all/sample_1.jpg",
     type: "shirt",
+    focusFunct: () => {
+      console.log("project clicked")
+    },
   },
   {
     name: "project 2",
@@ -12,6 +15,9 @@ const projects = [
     description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     image: "../images/products/all/sample_1.jpg",
     type: "shirt",
+    focusFunct: () => {
+      console.log("project clicked")
+    },
   },
   {
     name: "project 3",
@@ -19,6 +25,9 @@ const projects = [
     description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
     image: "../images/products/all/sample_1.jpg",
     type: "shirt",
+    focusFunct: () => {
+      console.log("project clicked")
+    },
   },
   {
     name: "project 4",
@@ -26,6 +35,9 @@ const projects = [
     description: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
     image: "../images/products/all/sample_1.jpg",
     type: "shirt",
+    focusFunct: () => {
+      console.log("project clicked")
+    },
   },
   {
     name: "project 5",
@@ -33,6 +45,9 @@ const projects = [
     description: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
     image: "../images/products/all/sample_1.jpg",
     type: "shirt",
+    focusFunct: () => {
+      console.log("project clicked")
+    },
   },
   {
     name: "project 6",
@@ -40,6 +55,9 @@ const projects = [
     description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
     image: "../images/products/all/sample_1.jpg",
     type: "shirt",
+    focusFunct: () => {
+      console.log("project clicked")
+    },
   },
   {
     name: "project 7",
@@ -47,6 +65,9 @@ const projects = [
     description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
     image: "../images/products/all/sample_1.jpg",
     type: "shirt",
+    focusFunct: () => {
+      console.log("project clicked")
+    },
   },
   {
     name: "project 8",
@@ -54,6 +75,9 @@ const projects = [
     description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
     image: "../images/products/all/sample_1.jpg",
     type: "shirt",
+    focusFunct: () => {
+      console.log("project clicked")
+    },
   },
   {
     name: "project 9",
@@ -61,6 +85,9 @@ const projects = [
     description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
     image: "../images/products/all/sample_1.jpg",
     type: "shirt",
+    focusFunct: () => {
+      console.log("project clicked")
+    },
   },
   {
     name: "project 10",
@@ -68,6 +95,9 @@ const projects = [
     description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
     image: "../images/products/all/sample_1.jpg",
     type: "shirt",
+    focusFunct: () => {
+      console.log("project clicked")
+    },
   },
   {
     name: "project 11",
@@ -75,6 +105,9 @@ const projects = [
     description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
     image: "../images/products/all/sample_1.jpg",
     type: "shirt",
+    focusFunct: () => {
+      console.log("project clicked")
+    },
   },
   {
     name: "project 12",
@@ -82,6 +115,9 @@ const projects = [
     description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
     image: "../images/products/all/sample_1.jpg",
     type: "shirt",
+    focusFunct: () => {
+      console.log("project clicked")
+    },
   },
   {
     name: "project 13",
@@ -89,6 +125,9 @@ const projects = [
     description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
     image: "../images/products/all/sample_1.jpg",
     type: "shirt",
+    focusFunct: () => {
+      console.log("project clicked")
+    },
   },
   {
     name: "project 14",
@@ -96,6 +135,9 @@ const projects = [
     description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
     image: "../images/products/all/sample_1.jpg",
     type: "shirt",
+    focusFunct: () => {
+      console.log("project clicked")
+    },
   },
   {
     name: "project 15",
@@ -103,6 +145,9 @@ const projects = [
     description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
     image: "../images/products/all/sample_1.jpg",
     type: "shirt",
+    focusFunct: () => {
+      console.log("project clicked")
+    },
   },
   {
     name: "project 16",
@@ -110,6 +155,9 @@ const projects = [
     description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
     image: "../images/products/all/sample_1.jpg",
     type: "shirt",
+    focusFunct: () => {
+      console.log("project clicked")
+    },
   },
   {
     name: "project 17",
@@ -117,6 +165,9 @@ const projects = [
     description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
     image: "../images/products/all/sample_1.jpg",
     type: "shirt",
+    focusFunct: () => {
+      console.log("project clicked")
+    },
   },
   {
     name: "project 18",
@@ -124,6 +175,9 @@ const projects = [
     description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
     image: "../images/products/all/sample_1.jpg",
     type: "shirt",
+    focusFunct: () => {
+      console.log("project clicked")
+    },
   },
 ]
 
