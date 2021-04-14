@@ -60,7 +60,7 @@ nav div.wrapper {
 nav div.wrapper .logo {
   display: inline;
   margin-right: auto;
-  max-width: 80px;
+  max-width: 60px;
 }
 
 nav ul {
@@ -709,12 +709,6 @@ footer div.wrapper #footer-menu li a:hover {
   }
   #intro-section #banner-img-div {
     padding: 60px 0 0 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
   }
   #intro-section #banner-img-div #banner-img {
     max-width: 200px;
@@ -808,12 +802,6 @@ footer div.wrapper #footer-menu li a:hover {
   }
   #intro-section #banner-img-div {
     padding: 70px 0 0 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
   }
   #intro-section #banner-img-div #banner-img {
     max-width: 350px;
@@ -856,13 +844,7 @@ footer div.wrapper #footer-menu li a:hover {
     background-position: 95% 0%;
   }
   #intro-section #banner-img-div {
-    padding: 50px 0 0 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    padding: 50px 0 0 0;
   }
   #intro-section #banner-img-div #banner-img {
     max-width: 450px;
