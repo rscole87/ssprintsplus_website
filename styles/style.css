@@ -60,7 +60,7 @@ nav div.wrapper {
 nav div.wrapper .logo {
   display: inline;
   margin-right: auto;
-  max-width: 100px;
+  max-width: 80px;
 }
 
 nav ul {
@@ -125,31 +125,6 @@ nav ul li a:hover {
 #intro-section {
   height: 75vh;
   background-color: #9dc88d;
-  background-image: url(../images/shirt-model2.png);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position-x: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: flex-end;
-}
-
-#intro-section #intro-text {
-  font-size: 150px;
-  font-weight: 800;
-  margin: 0px;
-  text-overflow: ellipsis;
-  max-width: 700px;
-  padding-bottom: 50px;
-  color: #ffffff;
-}
-
-#intro-section img {
-  max-height: 100%;
 }
 
 #about-section {
@@ -680,7 +655,7 @@ footer div.wrapper #footer-menu li a:hover {
             justify-content: space-between;
   }
   #mobile-menu-bttn-div .logo {
-    max-width: 90px;
+    max-width: 40px;
     margin-left: 30px;
   }
   #mobile-menu-bttn-div #mobile-menu-bttn {
@@ -727,11 +702,22 @@ footer div.wrapper #footer-menu li a:hover {
     font-size: 20px;
   }
   #intro-section {
-    background-size: cover;
+    background-image: url(../images/shirt-model2.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 25% 0%;
   }
-  #intro-section #intro-text {
-    font-size: 70px;
-    max-width: 75%;
+  #intro-section #banner-img-div {
+    padding: 60px 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  #intro-section #banner-img-div #banner-img {
+    max-width: 200px;
   }
   #about-section {
     padding: 15px 0px;
@@ -814,6 +800,24 @@ footer div.wrapper #footer-menu li a:hover {
 }
 
 @media only screen and (min-width: 501px) {
+  #intro-section {
+    background-image: url(../images/shirt-model2.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: -90% 0%;
+  }
+  #intro-section #banner-img-div {
+    padding: 70px 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  #intro-section #banner-img-div #banner-img {
+    max-width: 350px;
+  }
   #about-section .body-copy {
     font-size: 18px;
   }
@@ -845,6 +849,24 @@ footer div.wrapper #footer-menu li a:hover {
 }
 
 @media only screen and (min-width: 1025px) {
+  #intro-section {
+    background-image: url(../images/shirt-model2.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 95% 0%;
+  }
+  #intro-section #banner-img-div {
+    padding: 50px 0 0 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  #intro-section #banner-img-div #banner-img {
+    max-width: 450px;
+  }
   #about-section .body-copy {
     font-size: 20px;
     line-height: 1.4em;

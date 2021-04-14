@@ -46,7 +46,7 @@ nav {
     & .logo {
       display: inline;
       margin-right: auto;
-      max-width: 100px;
+      max-width: 80px;
     }
   }
 
@@ -91,27 +91,6 @@ nav {
 #intro-section {
   height: 75vh;
   background-color: $lightPrimary;
-  background-image: url(../images/shirt-model2.png);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position-x: right;
-  display: flex;
-  align-items: center;
-  justify-items: flex-end;
-
-  & #intro-text {
-    font-size: 150px;
-    font-weight: 800;
-    margin: 0px;
-    text-overflow: ellipsis;
-    max-width: 700px;
-    padding-bottom: 50px;
-    color: $lightComplementary;
-  }
-
-  & img {
-    max-height: 100%;
-  }
 }
 
 #about-section {
