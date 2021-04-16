@@ -61,6 +61,7 @@ projectFilter.addEventListener("change", () => {
 const printProject = (project) => {
   let projectClone = document.importNode(template.content, true)
   projectClone.querySelector("[project-container]").id = project.id
+  projectClone.querySelector("[project-container]").style.backgroundImage = `url(${project.image})`
   return projectClone
 }
 

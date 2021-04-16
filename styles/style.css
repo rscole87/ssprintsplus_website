@@ -482,78 +482,6 @@ select {
           box-shadow: none;
 }
 
-#projects-div #project1 {
-  background-image: url("../images/products/all/sample_1.jpg");
-}
-
-#projects-div #project2 {
-  background-image: url("../images/products/all/sample_2.jpg");
-}
-
-#projects-div #project3 {
-  background-image: url("../images/products/all/sample_3.jpg");
-}
-
-#projects-div #project4 {
-  background-image: url("../images/products/all/sample_4.jpg");
-}
-
-#projects-div #project5 {
-  background-image: url("../images/products/all/sample_5.jpg");
-}
-
-#projects-div #project6 {
-  background-image: url("../images/products/all/sample_6.jpg");
-}
-
-#projects-div #project7 {
-  background-image: url("../images/products/all/sample_7.jpg");
-}
-
-#projects-div #project8 {
-  background-image: url("../images/products/all/sample_8.jpg");
-}
-
-#projects-div #project9 {
-  background-image: url("../images/products/all/sample_9.jpg");
-}
-
-#projects-div #project10 {
-  background-image: url("../images/products/all/sample_10.jpg");
-}
-
-#projects-div #project11 {
-  background-image: url("../images/products/all/sample_11.jpg");
-}
-
-#projects-div #project12 {
-  background-image: url("../images/products/all/sample_12.jpg");
-}
-
-#projects-div #project13 {
-  background-image: url("../images/products/all/sample_13.jpg");
-}
-
-#projects-div #project14 {
-  background-image: url("../images/products/all/sample_14.jpg");
-}
-
-#projects-div #project15 {
-  background-image: url("../images/products/all/sample_15.jpg");
-}
-
-#projects-div #project16 {
-  background-image: url("../images/products/all/sample_16.jpg");
-}
-
-#projects-div #project17 {
-  background-image: url("../images/products/all/sample_17.jpg");
-}
-
-#projects-div #project18 {
-  background-image: url("../images/products/all/sample_18.jpg");
-}
-
 #about-us-hero {
   background-size: cover;
   height: 50vh;
@@ -637,7 +565,7 @@ footer div.wrapper #footer-menu li a:hover {
   color: #ffffff;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
   .wrapper {
     margin: 0 auto;
     width: 85%;

@@ -344,78 +344,6 @@ select {
     transform: scale(1.025);
     box-shadow: none;
   }
-
-  & #project1 {
-    background-image: url("../images/products/all/sample_1.jpg");
-  }
-
-  & #project2 {
-    background-image: url("../images/products/all/sample_2.jpg");
-  }
-
-  & #project3 {
-    background-image: url("../images/products/all/sample_3.jpg");
-  }
-
-  & #project4 {
-    background-image: url("../images/products/all/sample_4.jpg");
-  }
-
-  & #project5 {
-    background-image: url("../images/products/all/sample_5.jpg");
-  }
-
-  & #project6 {
-    background-image: url("../images/products/all/sample_6.jpg");
-  }
-
-  & #project7 {
-    background-image: url("../images/products/all/sample_7.jpg");
-  }
-
-  & #project8 {
-    background-image: url("../images/products/all/sample_8.jpg");
-  }
-
-  & #project9 {
-    background-image: url("../images/products/all/sample_9.jpg");
-  }
-
-  & #project10 {
-    background-image: url("../images/products/all/sample_10.jpg");
-  }
-
-  & #project11 {
-    background-image: url("../images/products/all/sample_11.jpg");
-  }
-
-  & #project12 {
-    background-image: url("../images/products/all/sample_12.jpg");
-  }
-
-  & #project13 {
-    background-image: url("../images/products/all/sample_13.jpg");
-  }
-
-  & #project14 {
-    background-image: url("../images/products/all/sample_14.jpg");
-  }
-
-  & #project15 {
-    background-image: url("../images/products/all/sample_15.jpg");
-  }
-
-  & #project16 {
-    background-image: url("../images/products/all/sample_16.jpg");
-  }
-
-  & #project17 {
-    background-image: url("../images/products/all/sample_17.jpg");
-  }
-
-  & #project18 {
-    background-image: url("../images/products/all/sample_18.jpg");
-  }
 }
 
 #about-us-hero {
@@ -488,7 +416,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
   @include mobileStyle;
 }
 
