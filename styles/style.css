@@ -745,7 +745,7 @@ footer div.wrapper #footer-menu li a:hover {
   }
   #featured-products-section #featured-products-div .product-thumb {
     min-width: 350px;
-    min-height: 250px;
+    min-height: 300px;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -790,8 +790,8 @@ footer div.wrapper #footer-menu li a:hover {
     font-style: italic;
   }
   #featured-products-section #featured-products-div .product-thumb {
-    min-width: 400px;
-    height: 310px;
+    min-width: 500px;
+    min-height: 400px;
   }
   #capabilities-section {
     padding-bottom: 30px;
